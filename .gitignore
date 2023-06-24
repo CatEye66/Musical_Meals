@@ -163,3 +163,4 @@ cython_debug/
 geckodriver.log
 selenium/
 .vscode/
+.*
