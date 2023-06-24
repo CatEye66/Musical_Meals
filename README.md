@@ -6,11 +6,13 @@ SpottyPie: Extracting Spotify playlists into individual tracks <br>
 Sauerkraut: Converting track name and artist into YouTube links <br>
 BeautifulSoup: Downloading the YouTube links as mp3 files on your computer <br>
 
-## Requirements
+# Requirements
 - Run the requirements file to ensure you have the appropriate libaries 
 - Ensure you are running Python 3.7 or higher 
+- Ensure you have pip installed
+>`pip install -r requirements.txt`
 
-## Extracting Spotify PLaylists into individual tracks
+# Extracting Spotify PLaylists into individual tracks
 
 - If you are starting with a Spotify playlist, first copy the share link of your playlist from spotify
     - **Ensure it is a public playlist.**
@@ -20,7 +22,7 @@ BeautifulSoup: Downloading the YouTube links as mp3 files on your computer <br>
 >`python3 SpottyPie.py -E`
 - The script should extract all the spotify tracks into the file _defaultExtractedSpotify.txt_
 
-## Converting track name and artist into YouTube links
+# Converting track name and artist into YouTube links
 
 - If you have previously run _SpottyPie_, it will generate a list in _defaultExtractedSpotify.txt_ with the format: <br>
 >Song name | Song artist | Duration | Spotify links
@@ -34,7 +36,7 @@ BeautifulSoup: Downloading the YouTube links as mp3 files on your computer <br>
 - The script should convert all tracks into YouTube links in the file _defaultYouTubeLinks.txt_
 >Song name | Song artist | Optional: Duration | YouTube links
 
-### Troubleshooting
+## Troubleshooting
 - Once the conversion is complete, check the _defaultYouTubeLinks.txt_ for <br>
 > MANUAL REPLACE: <br>
 - These are tracks that could not be found correctly on YouTube and need to be manually searched
@@ -46,7 +48,7 @@ BeautifulSoup: Downloading the YouTube links as mp3 files on your computer <br>
 - Please fix by checking YouTube link and remove the "CHECK: ", so that the final format is:
 >Song name | Song artist | Optional: Duration | YouTube links
 
-## Downloading the YouTube links as mp3 files on your computer 
+# Downloading the YouTube links as mp3 files on your computer 
 
 - Finally, run the BeautifulSoup script to convert the list of YouTube links into mp3 files
 - If you would like tracks to be numbered, run: <br>
