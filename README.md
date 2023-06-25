@@ -12,22 +12,32 @@ BeautifulSoup: Downloading the YouTube links as mp3 files on your computer <br>
 - Ensure you have pip installed
 >`pip install -r requirements.txt`
 
-# Extracting Spotify PLaylists into individual tracks
+# Listing down the music you'd like to convert
 
+- The first step is to populate the _defaultExtractedSpotify.txt_ with the list of music you'd like to convert into YouTube links and mp3s
+- You can do this in one of two ways:
+    1. Manual Typing 
+    2. Spotify Playlist Extraction 
+
+## Manual Typing
+- You can type this in _defaultExtractedSpotify.txt_ manually, using the format: <br>
+>Song name | Song artist | Optional: Duration 
+- Place each song on a separate line
+
+## Spotify Playlist Extraction
+- Another option is to extract from a Spotify playlist
 - If you are starting with a Spotify playlist, first copy the share link of your playlist from spotify
     - **Ensure it is a public playlist.**
 - Next, paste the link into the _defaultSpotifyPlaylist.txt_ file, under the _files_ directory
     - Place each spotify playlist link on a new line in the file if you are extracting from multiple playlists
 - Next, run the SpottyPie script, and ensure you are at the Musical_Meals directory 
 >`python3 SpottyPie.py -E`
-- The script should extract all the spotify tracks into the file _defaultExtractedSpotify.txt_
+- The script should extract all the spotify tracks into the file _defaultExtractedSpotify.txt_ with the format: <br>
+>Song name | Song artist | Duration | Spotify links
 
 # Converting track name and artist into YouTube links
 
-- If you have previously run _SpottyPie_, it will generate a list in _defaultExtractedSpotify.txt_ with the format: <br>
->Song name | Song artist | Duration | Spotify links
-- You can also choose to type in _defaultExtractedSpotify.txt_ manually, using the format: <br>
->Song name | Song artist | Optional: Duration 
+- When you have populated the _defaultExtractedSpotify.txt_ file, the next step is to convert them into YouTube links
 - Next, run the Sauerkraut script, and ensure you are at the Musical_Meals directory
 - If the duration is available, run: <br>
 >`python3 Sauerkraut.py -C -d` <br>
