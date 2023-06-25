@@ -248,7 +248,7 @@ if __name__=='__main__':
                 # run convert
                 pattern = ".* \| .* \| .*"
                 if instructions["convertDuration"]:
-                    pattern = ".* \| .* \| \d:\d\d .*"
+                    pattern = ".* \| .* \| \d+:\d+ .*"
 
                 if re.search(pattern, rline):
                     search = ' | '.join(rline.split(' | ')[0:-1])

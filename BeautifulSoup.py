@@ -81,8 +81,8 @@ def process_args(instructions):
                 print("Numbering tracks")
 
             elif currentArgument in ("-s", "--startingNum"):
-                instructions["starting"] = int(currentArgument)
-                print(f"\nStarting number: {currentValue}")
+                instructions["starting"] = int(currentValue)
+                print(f"Starting number: {currentValue}")
                 
     except getopt.error as err:
         # output error, and return with an error code
@@ -268,6 +268,9 @@ def eyed3(instructions):
 
             # iterate 
             track += 1
+
+    # finish writing 
+    print("Finished download")
 
 # main
 if __name__=='__main__':
