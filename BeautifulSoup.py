@@ -99,7 +99,7 @@ def convert(name, artist, url_payload, track, instructions, session):
     else:
         filename = f"{name} - {artist}.mp3"
 
-    print(f"-- Now Working On: {name} --")
+    print(f"-- Now Working On: {filename} --")
     print(f"Trying download...")
 
     # set up web driver

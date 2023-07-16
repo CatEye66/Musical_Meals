@@ -57,8 +57,8 @@ def process_args(instructions):
 def extract(playlist_link, instructions):
 
     #Authentication - without user
-    cid = #insert you cid here
-    secret = #insert your secret here
+    cid = #insert you client id here
+    secret = #insert your client secret here
     client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
     sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
