@@ -30,6 +30,8 @@ BeautifulSoup: Downloading the YouTube links as mp3 files on your computer <br>
     - **Ensure it is a public playlist.**
 - Next, paste the link into the _defaultSpotifyPlaylist.txt_ file, under the _files_ directory
     - Place each spotify playlist link on a new line in the file if you are extracting from multiple playlists
+- Before running the script, be sure to add your Spotify Client ID and Client Secret
+    - You can find out how via this guide: https://support.heateor.com/get-spotify-client-id-client-secret/
 - Next, run the SpottyPie script, and ensure you are at the Musical_Meals directory 
 >`python3 SpottyPie.py -E`
 - The script should extract all the spotify tracks into the file _defaultExtractedSpotify.txt_ with the format: <br>
